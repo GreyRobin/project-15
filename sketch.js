@@ -77,6 +77,19 @@ function draw() {
     }else{
       if(swordGroup.isTouching(boy)) {
         gameState = END
+        //endImg.visible = true
+        boy.addAnimation("SahilRunning",endImg)
+        boy.x=200
+        boy.y=300
+        boy.scale=0.6
+        cashG.destroyEach()
+        diamondsG.destroyEach()
+        jwelleryG.destroyEach()
+        swordGroup.destroyEach()
+        cashG.setVelocityEach(0)
+        diamondsG.setVelocityEach(0)
+        jwelleryG.setVelocityEach(0)
+        swordGroup.setVelocityEach(0)
     }
   }
   
